@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace ShopManager
 {
-    public partial class Form1 : Form
+    public partial class frmManager : Form
     {
-        public Form1()
+        public frmManager()
         {
             InitializeComponent();
+        }
+
+        private void frmManager_Load(object sender, EventArgs e)
+        {
         }
     }
 }
