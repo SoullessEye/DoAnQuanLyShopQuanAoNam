@@ -20,5 +20,19 @@ namespace ShopManager
         private void frmManager_Load(object sender, EventArgs e)
         {
         }
+
+        private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmNhanVien();
+            frm.Text = "Quản lý danh mục nhân viên";
+            frm.ShowDialog();
+        }
+
+        private void kháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmQLKH();
+            frm.Text = "Quản lý danh mục khách hàng";
+            frm.ShowDialog();
+        }
     }
 }

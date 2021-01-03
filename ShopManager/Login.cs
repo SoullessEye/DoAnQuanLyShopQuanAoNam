@@ -13,7 +13,7 @@ namespace ShopManager
 {
     public partial class Login : Form
     {
-        string strConnection = @"Data Source=DESKTOP-RK7GEUP;Initial Catalog=ClothesManager;Integrated Security=True";
+        string strConnection = @"Data Source=DESKTOP-CET28PS\SQLEXPRESS;Initial Catalog=ClothesManager;Integrated Security=True";
         SqlConnection conn;
         public Login()
         {
