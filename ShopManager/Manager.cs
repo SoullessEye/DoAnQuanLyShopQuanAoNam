@@ -34,5 +34,12 @@ namespace ShopManager
             frm.Text = "Quản lý danh mục khách hàng";
             frm.ShowDialog();
         }
+
+        private void sảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmQLSP();
+            frm.Text = "Quản lý danh mục sản phẩm";
+            frm.ShowDialog();
+        }
     }
 }

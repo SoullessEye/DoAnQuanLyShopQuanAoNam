@@ -54,6 +54,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ClothesManagerDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ClothesManagerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClothesManagerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClothesManagerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClothesManagerDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +75,12 @@
     </Compile>
     <Compile Include="frmQLKH.Designer.cs">
       <DependentUpon>frmQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSP.Designer.cs">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -85,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLKH.resx">
       <DependentUpon>frmQLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLSP.resx">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -111,6 +130,28 @@
     </None>
     <None Include="ClothesManagerDataSet.xss">
       <DependentUpon>ClothesManagerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClothesManagerDataSet1.xsc">
+      <DependentUpon>ClothesManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClothesManagerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClothesManagerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClothesManagerDataSet1.xss">
+      <DependentUpon>ClothesManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClothesManagerDataSet2.xsc">
+      <DependentUpon>ClothesManagerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ClothesManagerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClothesManagerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClothesManagerDataSet2.xss">
+      <DependentUpon>ClothesManagerDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
