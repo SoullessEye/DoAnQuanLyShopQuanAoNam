@@ -17,14 +17,21 @@ namespace ShopManager
         {
             InitializeComponent();
         }
-
         SqlConnection conn = null;
-        string strConn = @"Data Source=DESKTOP-CET28PS\SQLEXPRESS;Initial Catalog=ClothesManager;Integrated Security=True";
+        string strConn = @"Data Source=DESKTOP-RK7GEUP;Initial Catalog=ClothesManager;Integrated Security=True";
         SqlDataAdapter daNhanvien = null;
         DataTable dtNhanvien = null;
         bool Them;
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'clothesManagerDataSet1.NhanVienn' table. You can move, or remove it, as needed.
+            this.nhanViennTableAdapter.Fill(this.clothesManagerDataSet1.NhanVienn);
             LoadData();
         }
         void LoadData()
@@ -35,7 +42,7 @@ namespace ShopManager
                     conn = new SqlConnection(strConn);
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
-                daNhanvien = new SqlDataAdapter("Select*from NhanVienn", conn);
+                daNhanvien= new SqlDataAdapter("Select*from NhanVienn", conn);
                 dtNhanvien = new DataTable();
                 dtNhanvien.Clear();
                 daNhanvien.Fill(dtNhanvien);
@@ -185,7 +192,7 @@ namespace ShopManager
                 string MaNV = dgvNhanvien.Rows[r].Cells[0].Value.ToString();
                 command.CommandText = "delete from NhanVienn where MaNV=@MaNV";
                 command.Connection = conn;
-                command.Parameters.Add("@MaNV", SqlDbType.NVarChar).Value = MaNV;
+                command.Parameters.Add("@MaNV", SqlDbType.NVarChar).Value=MaNV;
                 command.ExecuteNonQuery();
                 LoadData();
                 MessageBox.Show("Xóa xong");
@@ -194,11 +201,6 @@ namespace ShopManager
             {
                 MessageBox.Show("Không xóa được, lỗi");
             }
-        }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

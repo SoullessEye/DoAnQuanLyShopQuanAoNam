@@ -43,10 +43,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(68, 45);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(90, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 22);
+            this.label1.Size = new System.Drawing.Size(226, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng nhập hệ thống";
             // 
@@ -54,46 +53,41 @@
             // 
             this.lable1.AutoSize = true;
             this.lable1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable1.Location = new System.Drawing.Point(26, 115);
-            this.lable1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lable1.Location = new System.Drawing.Point(34, 142);
             this.lable1.Name = "lable1";
-            this.lable1.Size = new System.Drawing.Size(55, 13);
+            this.lable1.Size = new System.Drawing.Size(71, 17);
             this.lable1.TabIndex = 0;
             this.lable1.Text = "Tài khoản";
             // 
             // lable2
             // 
             this.lable2.AutoSize = true;
-            this.lable2.Location = new System.Drawing.Point(26, 164);
-            this.lable2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lable2.Location = new System.Drawing.Point(34, 202);
             this.lable2.Name = "lable2";
-            this.lable2.Size = new System.Drawing.Size(52, 13);
+            this.lable2.Size = new System.Drawing.Size(66, 17);
             this.lable2.TabIndex = 0;
             this.lable2.Text = "Mật khẩu";
             // 
             // txtTaiKhoan
             // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(110, 115);
-            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(147, 142);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(135, 20);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(179, 22);
             this.txtTaiKhoan.TabIndex = 1;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(110, 171);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMatKhau.Location = new System.Drawing.Point(147, 211);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(135, 20);
+            this.txtMatKhau.Size = new System.Drawing.Size(179, 22);
             this.txtMatKhau.TabIndex = 2;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(28, 254);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangNhap.Location = new System.Drawing.Point(37, 312);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(76, 24);
+            this.btnDangNhap.Size = new System.Drawing.Size(102, 30);
             this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
@@ -101,10 +95,9 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(188, 254);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Location = new System.Drawing.Point(251, 312);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(56, 24);
+            this.btnThoat.Size = new System.Drawing.Size(75, 30);
             this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -113,10 +106,9 @@
             // ckbShowPass
             // 
             this.ckbShowPass.AutoSize = true;
-            this.ckbShowPass.Location = new System.Drawing.Point(110, 213);
-            this.ckbShowPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ckbShowPass.Location = new System.Drawing.Point(147, 262);
             this.ckbShowPass.Name = "ckbShowPass";
-            this.ckbShowPass.Size = new System.Drawing.Size(109, 17);
+            this.ckbShowPass.Size = new System.Drawing.Size(140, 21);
             this.ckbShowPass.TabIndex = 5;
             this.ckbShowPass.Text = "Hiển thị mật khẩu";
             this.ckbShowPass.UseVisualStyleBackColor = true;
@@ -124,9 +116,9 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(303, 336);
+            this.ClientSize = new System.Drawing.Size(414, 442);
             this.Controls.Add(this.ckbShowPass);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
@@ -135,10 +127,9 @@
             this.Controls.Add(this.lable2);
             this.Controls.Add(this.lable1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

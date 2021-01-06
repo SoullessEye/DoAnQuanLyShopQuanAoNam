@@ -21,11 +21,16 @@ namespace ShopManager
         {
         }
 
-        private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmNhanVien();
-            frm.Text = "Quản lý danh mục nhân viên";
+            Form frm = new frmDoimatkhau();
+            frm.Text = "Đổi mật khẩu";
             frm.ShowDialog();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void kháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -35,10 +40,24 @@ namespace ShopManager
             frm.ShowDialog();
         }
 
+        private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmNhanVien();
+            frm.Text = "Quản lý danh mục nhân viên";
+            frm.ShowDialog();
+        }
+
         private void sảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form frm = new frmQLSP();
             frm.Text = "Quản lý danh mục sản phẩm";
+            frm.ShowDialog();
+        }
+
+        private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmHoaDon();
+            frm.Text = "Quản lý danh mục hóa đơn";
             frm.ShowDialog();
         }
     }

@@ -26,22 +26,11 @@ namespace ShopManager.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-CET28PS\\SQLEXPRESS;Initial Catalog=ClothesManager;Integrated " +
-            "Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-RK7GEUP;Initial Catalog=ClothesManager;Integrated Security=Tr" +
+            "ue")]
         public string ClothesManagerConnectionString {
             get {
                 return ((string)(this["ClothesManagerConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-RK7GEUP;Initial Catalog=ClothesManager;Integrated Security=Tr" +
-            "ue")]
-        public string ClothesManagerConnectionString1 {
-            get {
-                return ((string)(this["ClothesManagerConnectionString1"]));
             }
         }
     }

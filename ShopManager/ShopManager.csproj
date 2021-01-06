@@ -64,6 +64,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ClothesManagerDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ClothesManagerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClothesManagerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +107,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Đổi mật khẩu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Đổi mật khẩu.Designer.cs">
+      <DependentUpon>Đổi mật khẩu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +140,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Đổi mật khẩu.resx">
+      <DependentUpon>Đổi mật khẩu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClothesManagerDataSet.xsc">
       <DependentUpon>ClothesManagerDataSet.xsd</DependentUpon>
     </None>
@@ -152,6 +175,17 @@
     </None>
     <None Include="ClothesManagerDataSet2.xss">
       <DependentUpon>ClothesManagerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ClothesManagerDataSet3.xsc">
+      <DependentUpon>ClothesManagerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ClothesManagerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClothesManagerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClothesManagerDataSet3.xss">
+      <DependentUpon>ClothesManagerDataSet3.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

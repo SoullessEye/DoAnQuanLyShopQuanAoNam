@@ -18,12 +18,14 @@ namespace ShopManager
             InitializeComponent();
         }
         SqlConnection conn = null;
-        string strConn = @"Data Source=DESKTOP-CET28PS\SQLEXPRESS;Initial Catalog=ClothesManager;Integrated Security=True";
+        string strConn = @"Data Source=DESKTOP-RK7GEUP;Initial Catalog=ClothesManager;Integrated Security=True";
         SqlDataAdapter daSanpham = null;
         DataTable dtSanpham = null;
         bool Them;
         private void frmQLSP_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'clothesManagerDataSet3.SanPham' table. You can move, or remove it, as needed.
+            this.sanPhamTableAdapter.Fill(this.clothesManagerDataSet3.SanPham);
             LoadData();
         }
         void LoadData()
@@ -102,7 +104,7 @@ namespace ShopManager
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if(Them)
+            if (Them)
             {
                 try
                 {

@@ -17,14 +17,14 @@ namespace ShopManager
         {
             InitializeComponent();
         }
-
         SqlConnection conn = null;
-        string strConn = @"Data Source=DESKTOP-CET28PS\SQLEXPRESS;Initial Catalog=ClothesManager;Integrated Security=True";
+        string strConn = @"Data Source=DESKTOP-RK7GEUP;Initial Catalog=ClothesManager;Integrated Security=True";
         SqlDataAdapter daKhachhang = null;
         DataTable dtKhachhang = null;
         bool Them;
         private void frmQLKH_Load(object sender, EventArgs e)
         {
+            this.khachhangTableAdapter.Fill(this.clothesManagerDataSet.Khachhang);
             LoadData();
         }
         void LoadData()
@@ -54,7 +54,7 @@ namespace ShopManager
                 btnXoa.Enabled = true;
                 btnThoat.Enabled = true;
             }
-            catch (SqlException)
+            catch(SqlException)
             {
                 MessageBox.Show("Loi !!!");
             }
@@ -116,7 +116,7 @@ namespace ShopManager
                     LoadData();
                     MessageBox.Show("Đã thêm xong");
                 }
-                catch (SqlException)
+                catch(SqlException)
                 {
                     MessageBox.Show("không thêm được, lỗi !!!");
                 }
@@ -131,7 +131,7 @@ namespace ShopManager
                     string Makh = dgvKhachhang.Rows[r].Cells[0].Value.ToString();
                     command.CommandText = "update Khachhang set Tenkh=@Tenkh, Diachi=@Diachi, Dienthoai=@Dienthoai where Makh=@Makh";
                     command.Connection = conn;
-
+                    
                     command.Parameters.Add("@Tenkh", SqlDbType.NVarChar).Value = txtTenkh.Text;
                     command.Parameters.Add("@Diachi", SqlDbType.NVarChar).Value = txtDiachi.Text;
                     command.Parameters.Add("@Dienthoai", SqlDbType.NVarChar).Value = txtDt.Text;

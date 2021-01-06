@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.dgvSanpham = new System.Windows.Forms.DataGridView();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtNhaSX = new System.Windows.Forms.TextBox();
             this.txtSize = new System.Windows.Forms.TextBox();
@@ -40,31 +47,98 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.clothesManagerDataSet1 = new ShopManager.ClothesManagerDataSet1();
+            this.clothesManagerDataSet3 = new ShopManager.ClothesManagerDataSet3();
             this.sanPhamBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sanPhamTableAdapter = new ShopManager.ClothesManagerDataSet1TableAdapters.SanPhamTableAdapter();
-            this.dgvSanpham = new System.Windows.Forms.DataGridView();
+            this.sanPhamTableAdapter = new ShopManager.ClothesManagerDataSet3TableAdapters.SanPhamTableAdapter();
             this.maspDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenspDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dongiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nhaSXDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sizeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sanPhamBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.clothesManagerDataSet2 = new ShopManager.ClothesManagerDataSet2();
-            this.sanPhamTableAdapter1 = new ShopManager.ClothesManagerDataSet2TableAdapters.SanPhamTableAdapter();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clothesManagerDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanPhamBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanpham)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanPhamBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clothesManagerDataSet2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clothesManagerDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sanPhamBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgvSanpham
+            // 
+            this.dgvSanpham.AutoGenerateColumns = false;
+            this.dgvSanpham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSanpham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maspDataGridViewTextBoxColumn,
+            this.tenspDataGridViewTextBoxColumn,
+            this.dongiaDataGridViewTextBoxColumn,
+            this.nhaSXDataGridViewTextBoxColumn,
+            this.sizeDataGridViewTextBoxColumn});
+            this.dgvSanpham.DataSource = this.sanPhamBindingSource;
+            this.dgvSanpham.Location = new System.Drawing.Point(13, 219);
+            this.dgvSanpham.Name = "dgvSanpham";
+            this.dgvSanpham.RowHeadersWidth = 51;
+            this.dgvSanpham.RowTemplate.Height = 24;
+            this.dgvSanpham.Size = new System.Drawing.Size(853, 237);
+            this.dgvSanpham.TabIndex = 13;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(791, 480);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 36);
+            this.btnThoat.TabIndex = 19;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(650, 480);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 36);
+            this.btnHuy.TabIndex = 18;
+            this.btnHuy.Text = "Hủy bỏ";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(493, 480);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 36);
+            this.btnLuu.TabIndex = 17;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(333, 480);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 36);
+            this.btnXoa.TabIndex = 16;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(178, 480);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 36);
+            this.btnSua.TabIndex = 15;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(12, 480);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 36);
+            this.btnThem.TabIndex = 14;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel1
             // 
@@ -81,7 +155,7 @@
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(854, 190);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 12;
             // 
             // txtNhaSX
             // 
@@ -163,98 +237,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã sản phẩm";
             // 
-            // btnThem
+            // clothesManagerDataSet3
             // 
-            this.btnThem.Location = new System.Drawing.Point(12, 480);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 36);
-            this.btnThem.TabIndex = 6;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(178, 480);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 36);
-            this.btnSua.TabIndex = 7;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(333, 480);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 36);
-            this.btnXoa.TabIndex = 8;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(493, 480);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 36);
-            this.btnLuu.TabIndex = 9;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(650, 480);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 36);
-            this.btnHuy.TabIndex = 10;
-            this.btnHuy.Text = "Hủy bỏ";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(791, 480);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 36);
-            this.btnThoat.TabIndex = 11;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // clothesManagerDataSet1
-            // 
-            this.clothesManagerDataSet1.DataSetName = "ClothesManagerDataSet1";
-            this.clothesManagerDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.clothesManagerDataSet3.DataSetName = "ClothesManagerDataSet3";
+            this.clothesManagerDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sanPhamBindingSource
             // 
             this.sanPhamBindingSource.DataMember = "SanPham";
-            this.sanPhamBindingSource.DataSource = this.clothesManagerDataSet1;
+            this.sanPhamBindingSource.DataSource = this.clothesManagerDataSet3;
             // 
             // sanPhamTableAdapter
             // 
             this.sanPhamTableAdapter.ClearBeforeFill = true;
-            // 
-            // dgvSanpham
-            // 
-            this.dgvSanpham.AutoGenerateColumns = false;
-            this.dgvSanpham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSanpham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maspDataGridViewTextBoxColumn,
-            this.tenspDataGridViewTextBoxColumn,
-            this.dongiaDataGridViewTextBoxColumn,
-            this.nhaSXDataGridViewTextBoxColumn,
-            this.sizeDataGridViewTextBoxColumn});
-            this.dgvSanpham.DataSource = this.sanPhamBindingSource1;
-            this.dgvSanpham.Location = new System.Drawing.Point(13, 219);
-            this.dgvSanpham.Name = "dgvSanpham";
-            this.dgvSanpham.RowHeadersWidth = 51;
-            this.dgvSanpham.RowTemplate.Height = 24;
-            this.dgvSanpham.Size = new System.Drawing.Size(853, 237);
-            this.dgvSanpham.TabIndex = 3;
             // 
             // maspDataGridViewTextBoxColumn
             // 
@@ -291,25 +286,11 @@
             this.sizeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sizeDataGridViewTextBoxColumn.Name = "sizeDataGridViewTextBoxColumn";
             // 
-            // sanPhamBindingSource1
-            // 
-            this.sanPhamBindingSource1.DataMember = "SanPham";
-            this.sanPhamBindingSource1.DataSource = this.clothesManagerDataSet2;
-            // 
-            // clothesManagerDataSet2
-            // 
-            this.clothesManagerDataSet2.DataSetName = "ClothesManagerDataSet2";
-            this.clothesManagerDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sanPhamTableAdapter1
-            // 
-            this.sanPhamTableAdapter1.ClearBeforeFill = true;
-            // 
             // frmQLSP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 528);
+            this.ClientSize = new System.Drawing.Size(878, 522);
             this.Controls.Add(this.dgvSanpham);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnHuy);
@@ -321,19 +302,24 @@
             this.Name = "frmQLSP";
             this.Text = "frmQLSP";
             this.Load += new System.EventHandler(this.frmQLSP_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSanpham)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clothesManagerDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clothesManagerDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sanPhamBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSanpham)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sanPhamBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clothesManagerDataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.DataGridView dgvSanpham;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtNhaSX;
         private System.Windows.Forms.TextBox txtSize;
@@ -345,19 +331,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnThoat;
-        private ClothesManagerDataSet1 clothesManagerDataSet1;
+        private ClothesManagerDataSet3 clothesManagerDataSet3;
         private System.Windows.Forms.BindingSource sanPhamBindingSource;
-        private ClothesManagerDataSet1TableAdapters.SanPhamTableAdapter sanPhamTableAdapter;
-        private System.Windows.Forms.DataGridView dgvSanpham;
-        private ClothesManagerDataSet2 clothesManagerDataSet2;
-        private System.Windows.Forms.BindingSource sanPhamBindingSource1;
-        private ClothesManagerDataSet2TableAdapters.SanPhamTableAdapter sanPhamTableAdapter1;
+        private ClothesManagerDataSet3TableAdapters.SanPhamTableAdapter sanPhamTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn maspDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenspDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dongiaDataGridViewTextBoxColumn;
